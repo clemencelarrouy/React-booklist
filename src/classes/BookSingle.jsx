@@ -50,7 +50,7 @@ function BookSingle() {
       <div>
             <h1 className='text-2xl mb-8'>By the same Author..</h1> 
       {(() => {
-        if (SameAuthorInstances >= 1 ) {
+        if (SameAuthorInstances[0] ) {
           return (
             <ul className='flex flex-wrap gap-6 mx-12' >{SameAuthorInstances} </ul>
           )
